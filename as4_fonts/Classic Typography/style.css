@@ -1,0 +1,61 @@
+@font-face {
+	 font-family:'crimson';
+	 src: url('../fonts/crimson/CrimsonText-Regular.ttf');
+	 font-weight: normal;
+	 font-style: normal;}
+
+
+* {margin:0; padding:0;}
+body {
+	font:100% 'crimson', georgia, times, serif; 
+	/*background-image:url(../images/grid_24px.png); */
+	background-color: #fff;
+	margin:29px 10% 0;
+
+}
+	
+p {font-size:18px; line-height:24px; }
+p + p {text-indent:14px;}
+q::before {content:”\201C”}
+q::after {content:”\201D”}
+
+h1 {
+	font-size:60px; 
+	line-height:96px; 
+	font-family:”Pinyon Script”, cursive; 
+	margin:4px 0 -4px; 
+	text-align:center;
+	font-weight:normal; 
+	position:relative;
+}
+
+h1 + p::first-letter {
+	font-family:times, serif; 
+	font-size:90px; 
+	float:left; 
+	line-height: .65;
+	padding:.085em 3px 0 0;
+	}
+
+h1 + p::first-line {
+	font-variant:small-caps; 
+	letter-spacing:.15em;
+	}
+
+h2 {
+	font-size:18px; 
+	line-height:24px; 
+	font-weight: bold;
+	text-align: center;
+	font-variant: small-caps;
+	word-spacing: .5em;
+	letter-spacing: .6em;
+
+}
+
+
+
+blockquote {margin:0px 20%;}
+
+q {font-size:18px; font-style:italic; line-height:24px;}
+
