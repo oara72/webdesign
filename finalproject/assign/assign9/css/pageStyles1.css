@@ -1,0 +1,156 @@
+* {margin:0; padding:0;}
+
+body {
+	font:1em helvetica, arial, sans-serif;
+	display: block;
+	background-image: url(../img/retrofest.jpg );
+	background-repeat: no-repeat;
+	background-size: cover;
+    z-index: -1;
+}
+
+#main_wrapper {                  
+	min-width: 600px;
+	max-width: 1100px;
+	margin: 0 auto;
+	background-image: url(../img/seamless_paper_texture.png);
+	border-radius: 0px 0px 20px 20px;
+	-mox-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	-border: 0px solid #000000;
+	
+	-webkit-box-shadow: 6px 6px 86px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 6px 6px 86px 0px rgba(0,0,0,0.75);
+	box-shadow: 6px 6px 86px 0px rgba(0,0,0,0.75);
+
+}
+
+header {
+	background-image: url(../img/gray_sand.png);
+	height: 150px;
+	}
+
+	header h2 {
+	font-family: 'Radley', serif;
+	padding-left: 30px;
+	padding-top: 30px;
+	font-size: 3.5em;
+	color: #fff;
+	text-shadow: 3px 4px 5px #000;
+	}
+	
+#twocolwrap {                   
+	float: left;
+	width: 100%;
+		opacity: 0.9;
+}
+           
+nav {      
+	float: left;
+	width: 300px;
+}
+
+article {                            
+	width: 950px;
+	margin-left: 150px;
+	margin-right: 210px;
+	padding: 20px 0;
+}
+
+video {
+	margin-top: 10px;
+	margin-left: 10%;
+}
+
+audio {
+	margin-top: 20px;
+	margin-left: 38%;
+}
+#gallery div  {
+
+	float: left;
+	
+   background-repeat: no-repeat;
+   background-size: cover;
+   width: 275px;
+   height: 205px; 
+   
+	
+   
+   margin-bottom: 10px;
+   margin-top: 10px;
+   margin-left: 10px;
+   margin-right: 10px;
+   
+	-webkit-box-shadow: 0 10px 6px -6px #777;
+	   -moz-box-shadow: 0 10px 6px -6px #777;
+	        box-shadow: 0 10px 6px -6px #777;
+
+    border-radius: 10px;	
+}
+#gallery div:before{
+	content:attr(title);
+	display:none;
+
+}
+#gallery div:hover {
+	z-index:2;
+	position:relative;
+	opacity: 0.9; -webkit-filter: brightness(150%);
+}
+#gallery div:hover::before{
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: bolder;
+	font-size: 0.9em;
+	text-shadow: 3px 4px 5px #000;
+	width:200px;
+	display:block;
+	background-image: url(../img/seamless_paper_texture.png);
+	text-align: center;
+	border:2px solid #B5B5B5;
+	opacity:0.8;
+	
+	margin-top: 175px;
+	margin-left: 40px;
+	
+	border-radius: 20px 20px 20px 20px;
+	-mox-border-radius: 20px 20px 20px 20px;
+	-webkit-border-radius: 20px 20px 20px 20px;
+	-border: 0px solid #000000;	
+}
+#image1{background-image: url(../img/car1.jpg);}
+#image2{background-image: url(../img/car2.jpg);}
+#image3{background-image: url(../img/car3.jpg);}
+#image4{background-image: url(../img/car4.jpg);}
+#image5{background-image: url(../img/car10.jpg);}
+#image6{background-image: url(../img/car6.jpg);}
+#image7{background-image: url(../img/car7.jpg);}
+#image8{background-image: url(../img/car8.jpg);}
+#image9{background-image: url(../img/car9.jpg);}
+
+article > *{ margin: 0 20px;} 
+
+
+footer {
+	clear:both;
+ 	width:100%;
+	height: 45px;
+	text-align:center;
+	background-image: url(../img/gray_sand.png);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 0px 0px 20px 20px;
+	-mox-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	-border: 0px solid #000000;	
+ 	}
+
+footer p {
+	font-family: 'Radley', serif;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: 0.9em;
+	color: #fff;
+	padding-top: 10px;
+	text-shadow: 3px 4px 5px #000;
+}

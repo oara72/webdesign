@@ -1,0 +1,215 @@
+* {margin:0; padding:0;}
+
+body {
+	font:1em helvetica, arial, sans-serif;
+	background-image: url(../images/panama.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	}
+
+div#main_wrapper {                  /*add from page 173 */
+	width: 1024px;
+	margin: 0 auto;
+	background-image: url(../images/fondos/fondo1.png);
+	border-radius: 0px 0px 20px 20px;
+	-mox-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	-border: 0px solid #000000;
+}
+
+header {
+	background-image: url(../images/header.jpg);
+	height: 180px;
+	width: 1024px;
+	}
+
+header > img {
+	padding-top: 15px;
+	padding-left: 10px;
+	z-index: 1;
+}
+
+div#threecolwrap {                  /*add from page 173 */
+	float:left;
+	width: 100%;
+	
+}	
+
+div#twocolwrap {                    /*add from page 173 */
+	float: left;
+	width: 100%;
+	margin-right: -210px;
+
+}
+
+nav {                                  /*add from page 173 */
+	/*float: left;
+	width: 150px;
+	background:#f00;
+	padding: 20px 0;*/
+	
+	display: table-cell;
+	float:left;
+	width: 15%;
+	list-style-type: none;
+}
+
+#nav li {
+	width: 150px;
+	display: block;
+
+	margin: 5px 5px;
+	background: url(../images/bg.jpg) no-repeat center top;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-moz-box-shadow: 1px 1px 1px #666;
+	-webkit-box-shadow: 1px 1px 1px #666;
+	-o-box-shadow: 1px 1px 1px #666;
+	box-shadow: 1px 1px 1px #666;
+}
+
+#nav a {
+	display: block;
+	padding: 10px;
+	font-family:Arial, sans-serif;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	text-shadow: 1px 1px 1px #666;
+
+	background: url(../images/bg.jpg) no-repeat center -200px;
+	background: rgba(80, 125, 200, 0.55);
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+	-webkit-transition: background 0.5s linear;
+	-moz-transition: background 0.5s linear;
+	-o-transition: background 0.5s linear;
+	transition: background 0.5s linear;
+}
+
+#nav a:hover {
+	background: url(../images/bg.jpg) no-repeat center top;
+	background: rgba(100, 125, 175, 0);
+}
+
+	
+header h1 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: normal;
+	font-size:2.5em;
+	letter-spacing:.03em;
+	color:#fff;
+	}
+
+	
+article {                             /*add from page 173 */
+	display: table-cell;
+	width: 75%;
+	background-image: url(../images/fondos/fondo1.png);
+}
+
+article > *{ margin: 0 20px;}  /*add from page 173 */
+
+article h1 {
+	font-family: 'Droid Sans', sans-serif;
+	font-size:2.5em;
+	letter-spacing:-.05em;
+	color:#fff;
+	}
+
+	
+article h2 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:700;
+	font-size:1.25em;
+	letter-spacing:-.05em;
+	color:#000;
+	line-height: 30px;
+	margin-top: 10px;
+	}
+	
+article p {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:300;
+	font-size:1em;
+	color:#000;
+	line-height: 25px;
+	}
+
+	
+article h3 {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:700;
+	font-size:1.15em;
+	letter-spacing:-.05em;
+	color:#000;
+	margin-top: 15px;
+	}
+	
+article strong {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight: bold;
+	font-size:1.15em;
+	letter-spacing:-.05em;
+	color:#000;
+	margin-top: 10px;
+}
+
+
+aside {
+ 	/*float:left;
+	width:210px; 
+	background:#ffed53;
+	padding:20px 0;
+	*/
+	
+	display: table-cell;
+	width: 10%;
+	background-image: url(../images/fondos/fondo3.png);
+	}
+
+aside > * {margin:0 10px; } /* moves child elements from column sides */
+
+aside h2 {
+	font-family: 'Bree Serif', serif;
+	font-weight:300;
+	letter-spacing:-.1em;
+	color:#f00;
+	}
+	
+aside p {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:300;
+	font-style:italic;
+	font-size:1em;
+	line-height:1.5em;
+	color:#000;
+	}	
+	
+	
+footer {
+	clear:both;
+ 	width:100%;
+	text-align:center;
+	background-image: url(../images/fondos/fondo2.png);
+	padding-top: 5px;
+	padding-bottom: 5px;
+	border-radius: 0px 0px 20px 20px;
+	-mox-border-radius: 0px 0px 20px 20px;
+	-webkit-border-radius: 0px 0px 20px 20px;
+	-border: 0px solid #000000;	
+ 	}
+	
+footer p {
+	font-family: 'Droid Sans', sans-serif;
+	font-weight:600;
+	font-size:.7em;
+	letter-spacing:-.05em;
+	color:#fff;
+	}

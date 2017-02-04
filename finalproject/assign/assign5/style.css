@@ -1,0 +1,118 @@
+ @font-face {
+	 font-family:"bebas", sans-serif;
+	 src: url("bebas/BebasNeue Regular.otf");
+	 }	 
+
+* {
+	margin: 0px auto;
+	padding: 0px;
+	
+}
+
+body {
+position: relative;              /**/
+top: 5px;
+left: -5px;
+
+	width: 60%;
+	padding-bottom: 15px;
+	padding-left: 15px;
+	padding-right: 30px;
+	
+	background-color: rgb(245,245,245);
+	
+}
+
+header {
+	font-family: 	"bebas", sans-serif;                /*2. font-family*/
+	font-size: 35px;                     /*3. font size*/
+	font-weight: normal;				/*4. font weight*/
+	word-spacing: 1.5px;                /*9. word-spacing*/
+	margin-bottom: 10px;
+}
+
+section {
+	padding-left: 20px;
+	padding-right: 40px;
+	padding-bottom: 20px;
+	padding-top: 20px;
+	
+	border-radius: 10px 10px 10px 10px;
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	border: 2px solid #999;
+
+	box-shadow: 0 0 15px 0;
+}
+
+article {
+	font: 15px Verdana, Geneva, sans-serif;  /*1. font*/
+	font-size: 0.9em;
+	color: rgb(102,102,102);
+}
+
+h2 {
+	margin-bottom: 15px;
+	text-align: left;                       /*10. text-align*/
+	text-decoration: underline;            /*11. text-decoration*/
+}
+
+p {
+text-indent: 10px;                       /*12. text-indent*/
+
+}
+ul {
+	padding-left: 30px;
+}
+li {
+	font-style: normal;                   /*5. font-style*/
+	text-align: justify;
+	list-style-type: decimal;
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-left: 7px;
+
+}
+
+footer{
+	font-family: "Oswald", sans-serif;
+	color: rgb(102,102,102);
+	letter-spacing: 1.5px;               /*8. letter-spacing*/
+	text-align: center;
+    font-variant: small-caps;            /*6. font-variant*/
+	line-height: 2em;                    /*7. line-height*/
+	margin-top: 20px;
+	padding-top: 5px;
+	border-top-style: solid;
+	border-color: rgb(102,102,102);
+	border-width: 0.5px;
+} 
+
+footer a:link {
+	color: rgb(102,102,102);
+    text-decoration: none;
+}
+
+footer a:visited {
+	color: rgb(102,102,102);
+    text-decoration: none;
+}
+
+footer a:hover {
+	color: rgb(102,102,102);
+    text-decoration: none;
+}
+
+footer a:active {
+
+    text-decoration: none;
+}
+
+strong {
+	text-transform: capitalize;          /*13. text-transform*/
+	vertical-align: initial;             /*14. vertical-align*/
+	list-style-type: none;
+}
+
+
+

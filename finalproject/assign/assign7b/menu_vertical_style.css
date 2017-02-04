@@ -1,0 +1,120 @@
+* {
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(seamless_paper_texture.png);
+}
+
+#container {
+    width:960px;
+    margin:0px auto;
+}
+
+header {
+	width: 960px;
+	height: 50px;
+}
+
+header > h2 {
+	font-family: 'Oswald', sans-serif;
+	padding-left: 11px;
+	letter-spacing: 1.5px;
+	color: rgb(112,112,112);
+	text-shadow: rgb(200,200,200) 1px 2px 5px;
+}
+
+aside {
+	float: left;
+	width: 125px;
+	height: 500px;
+}
+
+section {
+    float:left;
+    width:760px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: rgba(0,0,0, 0.7);
+}
+
+section > h2 {
+	font-family: 'Oswald', sans-serif;
+	color: rgba(0,0,0, 0.6);
+}
+footer {
+    clear:both;
+	text-align: center;
+	font-size: 0.8em;
+	font-family: Verdana;
+	color: rgba(0,0,0, 0.7);
+	box-shadow: rgb(168,168,168) 1px 1px 1px;
+}
+
+nav.vertical {
+	margin-top:5px;
+}
+
+nav.vertical ul {
+	position:absolute;
+	float:left;
+	margin:0;
+	padding:0
+}
+
+nav.vertical ul a  { 
+	display:block;
+	font-weight:normal;
+	font-size:1.2em;
+	line-height:32px;
+	padding:0 15px;
+	font-family: 'Oswald', sans-serif;	
+	text-shadow: #FFF 1px 1px 1px;
+	color:#FF4D48;
+}
+
+nav.vertical ul li {
+	position:relative;
+	width: 125px;               /*el ancho del primer nivel esta relacionado con la linea*/
+	float:none;                /* esta es la clave para vertical */
+	margin:0;
+	background-color: #84E7FF;
+}
+
+nav.vertical ul li:hover {
+	background:#FFDE74;
+	border: 1px solid #fff;
+}
+
+nav.vertical ul ul {
+	display:none;
+	                      /*desde aqui es necesario para ajustar con respecto a la izquierda*/
+	margin-left: 125.5px;
+	margin-top: -32px;
+	z-index: 1;
+}
+
+nav.vertical ul ul li {                   /*control del menu vertical - controla el ancho*/
+	float:none; 
+	width: 200px;
+	background-color:#CAE8C0;
+}
+
+nav.vertical ul ul a {                  /* control de los link */
+	padding:10px 15px;
+}
+
+nav.vertical ul ul ul {
+	display:none;
+	float: left;
+	border: 1px solid #fff;
+	margin-left: 200px;
+	margin-top: -52px;
+	z-index: 1;
+}
+
+nav.vertical ul li:hover > ul {
+	display:block;        /* selector para que aparezcan los li verticales */
+}

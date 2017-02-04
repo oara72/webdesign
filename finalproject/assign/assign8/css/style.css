@@ -1,0 +1,192 @@
+section, header, aside, footer * {
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../img/SummerCampBanner2015.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+#container {
+    width:970px;
+    margin:0px auto;
+	background-image: url(../img/retina_wood.png);
+}
+
+#header {
+	width: 970px;
+	height: 150px;
+	background-image: url(../img/SummerCamp2.jpg);
+}
+
+#section > h1 {
+	font-family: 'Indie Flower', cursive;
+	font-size: 2em;
+	padding-left: 11px;
+	letter-spacing: 1.5px;
+	color: rgb(112,112,112);
+	text-shadow: rgb(80,80,80)  1px 1px 1px, #FFF -1px -1px 1px;
+}
+
+
+#section {
+    float:left;
+	width: 720px;
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: 'Roboto Condensed', sans-serif;
+	color: rgba(0,0,0, 0.7);
+	background-image: url(../img/retina_wood.png);
+}
+
+#section > h2 {
+	font-family: 'Montserrat', sans-serif;
+	color: #5698BF;
+
+}
+
+#aside {
+	float: left;
+}
+
+#aside img {
+	width: 220px;
+	height: 150px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+#footer {
+    clear:both;
+	height: 50px;
+	background-image: url(../img/retina_wood.png);
+}
+
+#footer > p {
+	font-family: verdana;
+	padding-top: 15px;
+	line-height: 30px;
+	text-align: center;
+	font-size: 0.8em;
+	color: #39667F;
+}
+
+
+/*Formulario*/
+
+
+fieldset {
+	border: none;
+	margin: 5px;
+	
+	border: 1px solid #39667F;
+}
+
+fieldset > legend {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1em;
+	color: #CCB24F;
+	
+	background-color: #39667F;
+	margin-top: 10px;
+	text-indent: 20px;
+	
+	width: 100%;
+
+}
+
+label {
+	clear: left;
+	display: block;
+	float: left;
+	font-size: 0.8em;
+	text-align: right;
+	
+	margin-top:2px ;
+	margin-bottom: 2px;
+	margin-left: 5px;
+	margin-right: 5px;
+	
+	width: 25%;
+}
+
+input {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 2px;
+	width: 60%;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+select {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	margin: 2px;
+}
+
+textarea {
+	display: block;
+	float: left;
+	font-size: 0.9em;
+	height: 75px;
+	
+	margin-bottom: 10px;
+	
+	width: 60%;
+}
+
+fieldset.optionGroup {
+	margin-left: 25%;
+}
+
+fieldset.optionGroup label {
+	display: inline;
+	float: none;
+	margin: 0px 0px 0px 0px;
+	width: 100px;
+}
+
+fieldset.optionGroup input {
+	display: inline;
+	float: none;
+	margin: 0px 0px 0px 0px;
+	width: 20px;
+}
+
+input#csc {
+	width: 50px;
+}
+
+input.submit {
+
+	color: #ffffff;
+	text-align: center;
+	
+	background-color: #39667F;
+	float: none;
+
+	height: 30px;
+	width: 150px;
+	
+	margin-top: 10px;
+	margin-bottom: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	border-radius: 10px 10px 10px 10px;       
+	-moz-border-radius: 10px 10px 10px 10px;
+	-webkit-border-radius: 10px 10px 10px 10px;
+	
+	border: 1px solid #39667F;
+}
+
+
+input:focus, select:focus, textarea:focus {
+	background-color: rgb(225, 218, 165);
+}

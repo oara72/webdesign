@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<title>Assignment - 8 </title>
+	<meta charset="utf-8">
+	<link href='http://fonts.googleapis.com/css?family=Indie+Flower' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	<link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+	<div id="header">
+
+		<img src="img/banner.jpg" alt="banner" width="970" height="150" >
+
+	</div>
+
+	<nav>	</nav>
+
+	<div id="section">
+		<h1>Summer Camp Form</h1>
+
+		<form action="reply.php" method="POST">
+
+			<fieldset id="ginformation">
+				<legend>General Information</legend>	
+				
+				<label id="fName"> First Name </label>
+				<input name="fName" required="required" placeholder="first name" autofocus />
+					   
+				<label id="lName"> Last Name </label>
+				<input name="lName" required="required" placeholder="last name" />
+
+				<label id="dbirth"> Date of birth </label>
+				<input name="dbirth" type="date"/>	
+					   
+				<label id="address"> Address </label>
+				<input name="street" required="required" placeholder="address" />	
+					   
+				<label id="city"> City </label>
+				<input name="city" required="required" placeholder="city" />	
+					   
+				<label id="province">Province</label>
+				<select name="province" required="required" >
+						<option value=""> Select a Province </option>
+						<option value="AB">AB</option>
+						<option value="BC">BC</option>
+						<option value="NB">NB</option>
+						<option value="NL">NL</option>
+						<option value="NS">NS</option>
+						<option value="NT">NT</option>
+						<option value="NU">NU</option>
+						<option value="ON">ON</option>
+						<option value="PE">PE</option>
+						<option value="QC">QC</option>
+						<option value="SK">SK</option>
+						<option value="YT">YT[A]</option>
+					</select>
+				
+				<label id="pcode"> Postal Code</label>
+				<input name="pcode" required="required" pattern="^\w{3}(\-\w{3})?$"/>
+				
+				<label id="phone">Phone</label>
+				<input name="phone" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"/>
+				
+				<label id="E-mail"> E-mail </label>
+				<input name="email" required="required" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$"/>	
+					   
+		   	</fieldset>
+		
+			<fieldset id="parentsInfo">
+				<legend>Parents Information</legend>	
+				
+				<label id="parentName"> Parent(s) name </label>
+				<input name="parentName" required="required" placeholder="name" />
+
+				<label id="phone_parent">Parent(s) workphone</label>
+				<input name="phone_parent" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+					   placeholder="" />
+					   
+				<label id="cellphone_parent">Parent(s) cellphone</label>
+				<input name="cellphone_parent" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+				 />
+				
+				<label id="relativeName"> Relative(s)</label>
+				<input name="relativeName" required="required" placeholder="Emergency contact other than parent" />
+
+				<label id="phone_relative">Relative(s) workphone</label>
+				<input name="phone_relative" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+					   placeholder="" />
+					   
+				<label id="cellphone_relative">Relative(s) cellphone</label>
+				<input name="cellphone_relative" required="required" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$"
+					  />
+		   	</fieldset>
+			
+			<fieldset id="creditcard">
+				<legend>Credit Card (required) &nbsp;</legend>
+				
+				<label> </label>
+					<fieldset class="optionGroup"> 
+
+						<label id="mastercard"></label>
+						<input type="radio" name="mastercard" value="yes" />
+						<img src="img/master.png" alt="mastercard" /> 																			
+						
+						<label id="visa"></label>
+						<input type="radio" name="visa" value="yes" />						
+						<img src="img/visa.png" alt="visa" /> 
+						
+						<label id="american"> </label>
+						<input type="radio" name="american" value="yes" />
+						<img src="img/american.png" alt="visa" /> 
+						
+						<label id="cheque"> 
+						<input type="radio" name="cheque" value="yes" checked="checked"/> cheque 
+						</label>
+					</fieldset>
+				
+					<label id="ccardnumber">Credit Card Number</label>
+					<input name="ccardnumber" required="required" 
+					   pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$"
+					   placeholder="" />
+
+					<label id="ccardmonth">Expiration Date</label>
+					<select name="ccardmonth" required="required">
+						<option value=""> Select Month </option>
+						<option value="type1" >January (01)</option>
+				        <option value="type2" >February (02)</option>
+						<option value="type3" >March (03)</option>
+						<option value="type4" >April (04)</option>
+						<option value="type5" >May (05)</option>
+						<option value="type6" >June (06)</option>
+						<option value="type7" >July (07)</option>
+						<option value="type8" >August (08)</option>
+						<option value="type9" >September (09)</option>
+						<option value="type10" >October (10)</option>
+						<option value="type11" >November (11)</option>
+						<option value="type12" >December (12)</option>
+						
+					</select>   
+					<select id="ccardyear" required="required">
+						<option value=""> Select Year </option>
+						<option value="type1" >2014</option>
+				        <option value="type2" >2015</option>
+						<option value="type3" >2016</option>
+						<option value="type4" >2017</option>
+						<option value="type5" >2018</option>
+				
+					</select>   
+					
+				<label id="csc">CSC</label>
+					<input name="csc" required="required" pattern="^\d{3}$"/>
+					   
+			</fieldset>
+			
+			<fieldset id="info">
+				<legend>Additional Information </legend>
+				
+				<label>Enrollment</label>
+				<select id="Enrollment">
+					<option value="Full Day Program"> Full Day Program </option>
+					<option value="Half Day Program"> Half Day Program </option>
+				</select>
+
+				<label>Program</label>
+				<select id="program">
+					<option value="Full Day Program"> Art Program </option>
+					<option value="Half Day Program"> Music Program </option>
+					<option value="Half Day Program"> Dance Program </option>
+					<option value="Half Day Program"> Outdoor Program </option>
+					<option value="Half Day Program"> Bike Safety </option>
+					<option value="Half Day Program"> Sport Program </option>
+				</select>
+				
+			   
+					   
+			</fieldset>
+
+			<label id="allergies"> Do you have allergies ?</label> 
+				<fieldset class="optionGroup">
+					<label for="sYes"> Yes </label><input type="radio" name="allergies" id="sYes" value="Yes" />  
+					<label for="sNo" > No  </label><input type="radio" name="allergies" id="sNo" value="No" />
+				</fieldset><br>		
+			<label id="message">If you choose Yes, please describe</label><textarea name="messae" ></textarea><br><br>
+			
+		<input type="submit" value="submit" class="submit" />
+		</form>
+
+	</div>	
+	<div id="aside">
+		<img src="img/1camp.jpg" alt="image1"><br>
+		<img src="img/2camp.jpg" alt="image1">
+	</div>
+
+	<div id="footer"><p>Summer Camp 2015 - Ontario Canada<p></div>
+</div>
+
+</body>
+</html>
