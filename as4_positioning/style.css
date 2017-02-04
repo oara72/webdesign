@@ -1,0 +1,126 @@
+header, section, nav, footer * {  
+	display: block; 
+	position: relative;     /*Use relative o fixed positioning*/
+}
+
+header {
+	background-color: rgb(192,192,192);
+	width: 947px;
+	height: 150px;
+	text-align: left;
+	margin-top: 5px;
+	
+	border-radius: 25px 25px 0px 0px;         
+	-moz-border-radius: 25px 25px 0px 0px;
+	-webkit-border-radius: 25px 25px 0px 0px;
+	
+	background-image: url(img/fcbarcelona.png);   /* Includes a Background image*/
+	background-position: top right;
+	background-repeat: no-repeat;
+	background-size: 145px 145px;
+	background-position: 750px;
+}
+
+body {
+	margin: 0px auto;
+	padding: 0px;
+	width: 950px; /*numerical value*/
+	background-color: silver;
+	
+	/* Include a minimun of one of the following properties in your design - selected linear-gradient*/
+	background: -webkit-linear-gradient(left,rgba(0,0,102,0.9), rgba(255,0,0,1)); /*Safari 5.1-6*/   
+  	background: -o-linear-gradient(right,rgba(0,0,102,0.9), rgba(255,0,0,1)); /*Opera 11.1-12*/
+  	background: -moz-linear-gradient(right,rgba(0,0,102,0.9), rgba(255,0,0,1)); /*Fx 3.6-15*/
+  	background: linear-gradient(to right, rgba(0,0,102,0.9), rgba(255,0,0,1)); /*Standard*/
+}
+
+
+header > h2 {    
+	color: rgb(0,0,128);
+	font-weight: bold;
+	padding-left: 30px;
+	padding-top: 40px;
+}
+
+nav.vertical {
+	float: left;
+	width: 24.5%;
+	height: 800px;
+	text-align: left;
+	background-color: yellow;
+	margin-top: 3px;
+	margin-bottom: 2px;
+
+}
+
+nav ul {
+	background-color: rgb (0, 0, 0);
+	line-height: 3.5em;
+	list-style: none;
+	padding-left: 0px;
+	}
+	
+nav li {
+	color: blue;
+	font-family: Palatino, sans-serif;
+	padding-left: 20px;
+	font-weight: bold;
+}
+
+nav ul li a {
+	color: white;
+	text-decoration: none;
+}	
+
+nav ul li:hover {
+	background-color: red;
+	color: white;
+	font-weight: bolder;
+}
+
+section {
+	float: left;
+	width: 75%;
+	height: 800px;
+	background-color: #ffffff; 
+	margin-top: 3px;
+	margin-left: 2px;
+	
+	background-image: url(img/fc-barcelona.jpg);   /* Includes a image*/
+	background-position: 50% 96%; 
+	background-repeat: no-repeat;
+	background-size: 345px 245px;
+}
+
+section * h2 {
+	color: blue;
+	background-color: rgba(212, 212,212, 0.8);
+	font-family: Palatino Linotype, Book Antiqua, Palatino, sans-serif; 
+	padding-left:10px;  
+	}
+	
+section * p {
+	padding-left: 10px;
+	padding-right: 10px;
+	font-family: Century Gothic MS, sans-serif; 
+	font-size: 0.9em;
+}
+
+p em {color: red;}
+
+
+footer {
+	clear: left;                   
+	width: 947px;
+	height: 80px;
+	background-color: grey;
+}
+
+footer p {
+	text-align: center;
+	font-family: Trebuchet MS;
+	font-size: 0.9em;
+	color: white;
+	font-weight: bold;
+	padding-top: 10px;
+}

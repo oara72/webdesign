@@ -1,0 +1,13 @@
+<html>
+	<head>
+		<title>Assignment # 3 - Positioning Elements<title>
+		link href="style.css" rel="stylesheet" type="text/css"/>	
+	</head>
+	<body>
+		<header><header>
+		<nav class="vertical"><nav>
+		<section><section>
+		<footer></footer>
+	</body>
+</html>
+
